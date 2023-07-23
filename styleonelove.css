@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+body,
+button {
+    font-family: 'Caprasimo', cursive;
+}
+
+body {
+    text-align: center;
+    background-image: url("Мозгавзрыв.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: white;
+    background-size: 120%;
+    animation: bg 10s linear infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+@keyframes bg {
+
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+.gamecontainer {
+    background-image: url(boomayoo.jpg);
+    width: 505px;
+    height: 301px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+
+}
+
+.game {
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    width: 80%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.tipa_interface {
+    border-radius: 5px;
+    text-align: left;
+}  
+input{
+background-color:darkgrey;
+border-radius:2px;
+border-color:dimgrey;
+border-style: solid;
+margin:2px;
+
+
+}
+button{
+background-color:rgba(125, 96, 128, 0.623);
+}
+
+.firegif{
+position:absolute;
+width:105%;
+object-fit: cover;
+z-index: -1;
+display: none;
+}
